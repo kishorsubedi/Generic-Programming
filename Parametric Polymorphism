@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std ;
+
+template <typename my_type> void display(my_type); //Prototype
+template <typename my_type> void display(my_type x, my_type y);
+
+
+int main()
+{
+  display(7) ;
+  display(3.23) ;
+  display(3,5) ;
+  return 0;
+}
+
+template <typename my_type> void display(my_type x)
+{
+  cout << "One parameter" << endl ;
+  cout << x << endl;
+}
+
+template <typename my_type > void display(my_type x, my_type y)
+{
+  cout << "Two parameters" << endl ;
+  cout << x << endl << y << endl;
+}
