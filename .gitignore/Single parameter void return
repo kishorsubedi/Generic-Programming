@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std ;
+
+template <typename my_type> void display(my_type x)
+{
+  cout << x ;
+}
+
+int main()
+{
+  display(5) ;  //5
+  return 0;
+}
