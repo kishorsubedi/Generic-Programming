@@ -7,10 +7,19 @@ template <typename my_type> void display(my_type x, my_type y);
 
 int main()
 {
-  display(7) ;
+  display(7) ; 
   display(3.23) ;
   display(3,5) ;
-  return 0;
+  return 0; 
+  /*
+  One parameter
+7
+One parameter
+3.23
+Two parameters
+3
+5
+*/  
 }
 
 template <typename my_type> void display(my_type x)
