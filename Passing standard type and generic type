@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std ;
+
+template <typename my_type> my_type display(my_type, int ); //Prototype
+
+int main()
+{
+  display(5.08,7) ; // couts 5.08 7 times
+  return 0;
+}
+
+template <typename my_type> my_type display(my_type x, int y)
+{
+  for (int i=0; i< y; i++)
+  {
+    cout << x << endl ;
+  }
+  
+}
