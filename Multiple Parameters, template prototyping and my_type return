@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std ;
+
+template <typename my_type> my_type display(my_type, my_type ); //Prototype
+
+int main()
+{
+  cout << display(5,7) ; //7
+  return 0;
+}
+
+template <typename my_type> my_type display(my_type x, my_type y)
+{
+  if (x > y)
+    return x ;
+  else
+    return y ;
+}
