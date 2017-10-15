@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std ;
+
+template <typename my_type> void display(my_type); //Prototype
+void display(int x) ;
+
+int main()
+{
+  display(7) ; //normal function called has precedence over generic function
+  display(3.23) ; //generic function called
+  return 0;
+}
+
+template <typename my_type> void display(my_type x)
+{
+  cout << "Generic function called" << endl ;
+  cout << x << endl;
+}
+
+void display(int x)
+{
+  cout << "Normal function called" << endl;
+  cout << x << endl;
+}
